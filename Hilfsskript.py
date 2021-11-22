@@ -1,5 +1,5 @@
 from numpy import double
-import pd as pd
+import pandas as pd
 
 print('Read train')
 df_train: pd.DataFrame = pd.read_csv('./data-classification/adult.data', sep=', ', engine='python', header=None, names=[
