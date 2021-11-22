@@ -1,9 +1,8 @@
 from numpy import double
-import pandas
-from pandas.core.dtypes.missing import isna
+import pd as pd
 
 print('Read train')
-df_train: pandas.DataFrame = pandas.read_csv('./data-classification/adult.data', sep=', ', engine='python', header=None, names=[
+df_train: pd.DataFrame = pd.read_csv('./data-classification/adult.data', sep=', ', engine='python', header=None, names=[
 'age', 'workclass', 'fnlwgt', 
 'education', 'education-num', 'marital-status', 'occupation', 'relationship', 'race', 
 'sex' , 'capital-gain' , 'capital-loss',
@@ -11,7 +10,7 @@ df_train: pandas.DataFrame = pandas.read_csv('./data-classification/adult.data',
 ])
 
 print('Read test')
-df_test: pandas.DataFrame = pandas.read_csv('./data-classification/adult.test', sep=', ', engine='python', header=None, names=[
+df_test: pd.DataFrame = pd.read_csv('./data-classification/adult.test', sep=', ', engine='python', header=None, names=[
 'age', 'workclass', 'fnlwgt', 
 'education', 'education-num', 'marital-status', 'occupation', 'relationship', 'race', 
 'sex' , 'capital-gain' , 'capital-loss',
